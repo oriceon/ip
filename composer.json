@@ -1,0 +1,29 @@
+{
+    "name": "oriceon/ip",
+    "description": "Get the public IP in a quick way",
+    "keywords": [
+        "oriceon",
+        "ip"
+    ],
+    "homepage": "https://github.com/oriceon/ip",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Valentin Ivașcu",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "Oriceon\\Ip": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
