@@ -65,7 +65,14 @@ class Ip {
 
             $url = 'http://bot.whatismyipaddress.com';
 
-            if ( ! is_null($url))
+            $envUrl = getenv('ORICEON_IP_API_URL');
+            if ($envUrl !== false)
+            {
+                $url = $envUrl;
+            }
+
+
+            if ( ! empty($url))
             {
                 $parse_ip = preg_replace('/[^0-9.]/', '', trim(strip_tags(@file_get_contents(trim($url)))));
 
